@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  TestViewController.m
 //  PushMe
 //
 //  Created by Aleksandr Fetisov on 12.02.2020.
 //  Copyright © 2020 Aleksandr Fetisov. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TestViewController.h"
 
-@interface ViewController ()
+@interface TestViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -93,7 +93,7 @@
     
 }
 
-- (void)changeColorButtonDidTap:(UIButton *)sender{
+- (void)changeColorButtonDidTap:(UIButton *) sender {
     if ([self.view.backgroundColor isEqual: [UIColor redColor]]) {
         self.view.backgroundColor = [UIColor greenColor];
     } else {

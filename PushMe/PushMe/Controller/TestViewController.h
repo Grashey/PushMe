@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TestViewController.h
 //  PushMe
 //
 //  Created by Aleksandr Fetisov on 12.02.2020.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TestViewController : UIViewController
 
 @end
 

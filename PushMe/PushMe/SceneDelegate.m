@@ -1,5 +1,6 @@
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "TestViewController.h"
+#import "MainViewController.h"
 
 @interface SceneDelegate ()
 
@@ -13,7 +14,7 @@
     UIWindowScene *windowScene = [[UIWindowScene alloc] initWithSession:session connectionOptions:connectionOptions];
     CGRect frame = [[UIWindow alloc] initWithWindowScene:windowScene].bounds;
     self.window = [[UIWindow alloc] initWithFrame: frame];
-    UIViewController *firstViewController = [[ViewController alloc] init];
+    UIViewController *firstViewController = [[TestViewController alloc] init];
     firstViewController.view.backgroundColor = [UIColor redColor];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
     [navController setNavigationBarHidden:TRUE];
