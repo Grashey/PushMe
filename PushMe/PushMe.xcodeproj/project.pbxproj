@@ -18,6 +18,7 @@
 		B6880CF423F57DE900DE91B2 /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CF323F57DE900DE91B2 /* Airport.m */; };
 		B6880CF723F57EC200DE91B2 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CF623F57EC200DE91B2 /* DataManager.m */; };
 		B6880CFA23F581EC00DE91B2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CF923F581EC00DE91B2 /* MainViewController.m */; };
+		B6DB17D823F5E8A100B2BD61 /* TestSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DB17D723F5E8A100B2BD61 /* TestSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		B6880CF623F57EC200DE91B2 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		B6880CF823F581EC00DE91B2 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B6880CF923F581EC00DE91B2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B6DB17D623F5E8A100B2BD61 /* TestSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSecondViewController.h; sourceTree = "<group>"; };
+		B6DB17D723F5E8A100B2BD61 /* TestSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 			children = (
 				B6880CD523F3F76500DE91B2 /* TestViewController.h */,
 				B6880CD623F3F76500DE91B2 /* TestViewController.m */,
+				B6DB17D623F5E8A100B2BD61 /* TestSecondViewController.h */,
+				B6DB17D723F5E8A100B2BD61 /* TestSecondViewController.m */,
 				B6880CF823F581EC00DE91B2 /* MainViewController.h */,
 				B6880CF923F581EC00DE91B2 /* MainViewController.m */,
 			);
@@ -183,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DB17D823F5E8A100B2BD61 /* TestSecondViewController.m in Sources */,
 				B6880CD723F3F76500DE91B2 /* TestViewController.m in Sources */,
 				B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */,
 				B6880CF423F57DE900DE91B2 /* Airport.m in Sources */,

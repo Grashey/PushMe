@@ -17,7 +17,6 @@
     UIViewController *firstViewController = [[TestViewController alloc] init];
     firstViewController.view.backgroundColor = [UIColor redColor];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
-    [navController setNavigationBarHidden:TRUE];
     self.window.windowScene = windowScene;
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
