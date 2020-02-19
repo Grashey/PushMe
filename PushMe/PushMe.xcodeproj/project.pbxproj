@@ -19,6 +19,10 @@
 		B6880CF723F57EC200DE91B2 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CF623F57EC200DE91B2 /* DataManager.m */; };
 		B6880CFA23F581EC00DE91B2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CF923F581EC00DE91B2 /* MainViewController.m */; };
 		B6DB17D823F5E8A100B2BD61 /* TestSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DB17D723F5E8A100B2BD61 /* TestSecondViewController.m */; };
+		B6DB17DD23FC5CF900B2BD61 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = B6DB17DA23FC5CF700B2BD61 /* countries.json */; };
+		B6DB17DE23FC5CF900B2BD61 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = B6DB17DB23FC5CF700B2BD61 /* cities.json */; };
+		B6DB17DF23FC5CF900B2BD61 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = B6DB17DC23FC5CF800B2BD61 /* airports.json */; };
+		B6EB28F123FDBCDC00508DC5 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EB28F023FDBCDC00508DC5 /* PlaceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,11 @@
 		B6880CF923F581EC00DE91B2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B6DB17D623F5E8A100B2BD61 /* TestSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSecondViewController.h; sourceTree = "<group>"; };
 		B6DB17D723F5E8A100B2BD61 /* TestSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSecondViewController.m; sourceTree = "<group>"; };
+		B6DB17DA23FC5CF700B2BD61 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		B6DB17DB23FC5CF700B2BD61 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		B6DB17DC23FC5CF800B2BD61 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		B6EB28EF23FDBCDC00508DC5 /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		B6EB28F023FDBCDC00508DC5 /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,18 +86,16 @@
 		B6880CCE23F3F76500DE91B2 /* PushMe */ = {
 			isa = PBXGroup;
 			children = (
-				B6880CCF23F3F76500DE91B2 /* AppDelegate.h */,
-				B6880CD023F3F76500DE91B2 /* AppDelegate.m */,
-				B6880CD223F3F76500DE91B2 /* SceneDelegate.h */,
-				B6880CD323F3F76500DE91B2 /* SceneDelegate.m */,
+				B6EB28EE23FD965300508DC5 /* Delegate */,
+				B6DB17D923FC5C5900B2BD61 /* Resources */,
 				B6880CFB23F5820300DE91B2 /* Controller */,
-				B6880CF523F57EC200DE91B2 /* DataManager.h */,
-				B6880CF623F57EC200DE91B2 /* DataManager.m */,
+				B6EB28ED23FD963200508DC5 /* Data Manager */,
 				B6880CEE23F57BA800DE91B2 /* Model */,
 				B6880CDB23F3F77100DE91B2 /* Assets.xcassets */,
 				B6880CDD23F3F77100DE91B2 /* LaunchScreen.storyboard */,
 				B6880CE023F3F77100DE91B2 /* Info.plist */,
 				B6880CE123F3F77100DE91B2 /* main.m */,
+				B6EB28EC23FD95F900508DC5 /* Test */,
 			);
 			path = PushMe;
 			sourceTree = "<group>";
@@ -109,14 +116,53 @@
 		B6880CFB23F5820300DE91B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6880CD523F3F76500DE91B2 /* TestViewController.h */,
-				B6880CD623F3F76500DE91B2 /* TestViewController.m */,
-				B6DB17D623F5E8A100B2BD61 /* TestSecondViewController.h */,
-				B6DB17D723F5E8A100B2BD61 /* TestSecondViewController.m */,
+				B6EB28EF23FDBCDC00508DC5 /* PlaceViewController.h */,
+				B6EB28F023FDBCDC00508DC5 /* PlaceViewController.m */,
 				B6880CF823F581EC00DE91B2 /* MainViewController.h */,
 				B6880CF923F581EC00DE91B2 /* MainViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6DB17D923FC5C5900B2BD61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6DB17DC23FC5CF800B2BD61 /* airports.json */,
+				B6DB17DB23FC5CF700B2BD61 /* cities.json */,
+				B6DB17DA23FC5CF700B2BD61 /* countries.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6EB28EC23FD95F900508DC5 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B6880CD523F3F76500DE91B2 /* TestViewController.h */,
+				B6880CD623F3F76500DE91B2 /* TestViewController.m */,
+				B6DB17D623F5E8A100B2BD61 /* TestSecondViewController.h */,
+				B6DB17D723F5E8A100B2BD61 /* TestSecondViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B6EB28ED23FD963200508DC5 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B6880CF523F57EC200DE91B2 /* DataManager.h */,
+				B6880CF623F57EC200DE91B2 /* DataManager.m */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		B6EB28EE23FD965300508DC5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B6880CCF23F3F76500DE91B2 /* AppDelegate.h */,
+				B6880CD023F3F76500DE91B2 /* AppDelegate.m */,
+				B6880CD223F3F76500DE91B2 /* SceneDelegate.h */,
+				B6880CD323F3F76500DE91B2 /* SceneDelegate.m */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +222,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DB17DE23FC5CF900B2BD61 /* cities.json in Resources */,
+				B6DB17DD23FC5CF900B2BD61 /* countries.json in Resources */,
 				B6880CDF23F3F77100DE91B2 /* LaunchScreen.storyboard in Resources */,
 				B6880CDC23F3F77100DE91B2 /* Assets.xcassets in Resources */,
+				B6DB17DF23FC5CF900B2BD61 /* airports.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +239,7 @@
 			files = (
 				B6DB17D823F5E8A100B2BD61 /* TestSecondViewController.m in Sources */,
 				B6880CD723F3F76500DE91B2 /* TestViewController.m in Sources */,
+				B6EB28F123FDBCDC00508DC5 /* PlaceViewController.m in Sources */,
 				B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */,
 				B6880CF423F57DE900DE91B2 /* Airport.m in Sources */,
 				B6880CF123F57CCC00DE91B2 /* City.m in Sources */,
