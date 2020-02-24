@@ -9,6 +9,7 @@
 #import "PlaceViewController.h"
 #define ReuseIdentifier @"CellIdentifier"
 #import "DataManager.h"
+#import "PlaceTableViewCell.h"
 
 @interface PlaceViewController ()
 @property (nonatomic) PlaceType placeType;
@@ -50,6 +51,7 @@
     } else {
         self.title = @"Куда";
     }
+    
 }
 
 - (void)changeSource
@@ -76,20 +78,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
+    PlaceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:ReuseIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell = [[PlaceTableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:ReuseIdentifier];
     }
     if (_segmentedControl.selectedSegmentIndex == 0) {
         City *city = [_currentArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = city.name;
-        cell.detailTextLabel.text = city.code;
+        [cell configureWithCity:(city)];
     }
     else if (_segmentedControl.selectedSegmentIndex == 1) {
         Airport *airport = [_currentArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = airport.name;
-        cell.detailTextLabel.text = airport.code;
+        [cell configureWithAirport:(airport)];
     }
     
     return cell;
