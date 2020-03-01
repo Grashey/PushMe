@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B614E9C7240C117600E81582 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9C6240C117600E81582 /* APIManager.m */; };
 		B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD023F3F76500DE91B2 /* AppDelegate.m */; };
 		B6880CD423F3F76500DE91B2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD323F3F76500DE91B2 /* SceneDelegate.m */; };
 		B6880CD723F3F76500DE91B2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD623F3F76500DE91B2 /* TestViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B614E9C5240C117600E81582 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		B614E9C6240C117600E81582 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		B6880CCC23F3F76500DE91B2 /* PushMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6880CCF23F3F76500DE91B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6880CD023F3F76500DE91B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,7 +96,7 @@
 				B6DB17D923FC5C5900B2BD61 /* Resources */,
 				B6880CFB23F5820300DE91B2 /* Controller */,
 				B6EB28FC2403334300508DC5 /* View */,
-				B6EB28ED23FD963200508DC5 /* Data Manager */,
+				B6EB28ED23FD963200508DC5 /* Managers */,
 				B6880CEE23F57BA800DE91B2 /* Model */,
 				B6880CDB23F3F77100DE91B2 /* Assets.xcassets */,
 				B6880CDD23F3F77100DE91B2 /* LaunchScreen.storyboard */,
@@ -149,13 +152,15 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
-		B6EB28ED23FD963200508DC5 /* Data Manager */ = {
+		B6EB28ED23FD963200508DC5 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9C5240C117600E81582 /* APIManager.h */,
+				B614E9C6240C117600E81582 /* APIManager.m */,
 				B6880CF523F57EC200DE91B2 /* DataManager.h */,
 				B6880CF623F57EC200DE91B2 /* DataManager.m */,
 			);
-			path = "Data Manager";
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		B6EB28EE23FD965300508DC5 /* Delegate */ = {
@@ -259,6 +264,7 @@
 				B6880CFA23F581EC00DE91B2 /* MainViewController.m in Sources */,
 				B6880CE223F3F77100DE91B2 /* main.m in Sources */,
 				B6880CF723F57EC200DE91B2 /* DataManager.m in Sources */,
+				B614E9C7240C117600E81582 /* APIManager.m in Sources */,
 				B6880CD423F3F76500DE91B2 /* SceneDelegate.m in Sources */,
 				B6880CED23F57B0200DE91B2 /* Country.m in Sources */,
 				B6EB28FB240330F800508DC5 /* PlaceTableViewCell.m in Sources */,
