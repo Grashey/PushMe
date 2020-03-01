@@ -12,13 +12,6 @@
 
 @interface MainViewController () <PlaceViewControllerDelegate>
 
-typedef struct SearchRequest {
-    __unsafe_unretained NSString *origin;
-    __unsafe_unretained NSString *destionation;
-    __unsafe_unretained NSDate *departDate;
-    __unsafe_unretained NSDate *returnDate;
-} SearchRequest;
-
 @property (nonatomic, strong) UIButton *departureButton;
 @property (nonatomic, strong) UIButton *arrivalButton;
 @property (nonatomic) SearchRequest searchRequest;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6741259BC9D46C27B2CE26 /* Pods_PushMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0860E20B9735424253E59E /* Pods_PushMe.framework */; };
 		B614E9C7240C117600E81582 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9C6240C117600E81582 /* APIManager.m */; };
 		B614E9CA240C1DB600E81582 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9C9240C1DB600E81582 /* Ticket.m */; };
 		B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD023F3F76500DE91B2 /* AppDelegate.m */; };
@@ -29,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0860E20B9735424253E59E /* Pods_PushMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B76773C9A11F6711B2F8A24 /* Pods-PushMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushMe.debug.xcconfig"; path = "Target Support Files/Pods-PushMe/Pods-PushMe.debug.xcconfig"; sourceTree = "<group>"; };
+		4BD7A21B1472F531465C9FC7 /* Pods-PushMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushMe.release.xcconfig"; path = "Target Support Files/Pods-PushMe/Pods-PushMe.release.xcconfig"; sourceTree = "<group>"; };
 		B614E9C5240C117600E81582 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		B614E9C6240C117600E81582 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		B614E9C8240C1DB600E81582 /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
@@ -70,17 +74,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6741259BC9D46C27B2CE26 /* Pods_PushMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30B6FB769A8860565D3DDF08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B76773C9A11F6711B2F8A24 /* Pods-PushMe.debug.xcconfig */,
+				4BD7A21B1472F531465C9FC7 /* Pods-PushMe.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B6880CC323F3F76500DE91B2 = {
 			isa = PBXGroup;
 			children = (
 				B6880CCE23F3F76500DE91B2 /* PushMe */,
 				B6880CCD23F3F76500DE91B2 /* Products */,
+				30B6FB769A8860565D3DDF08 /* Pods */,
+				FA3959C94D657442A36C140E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +205,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FA3959C94D657442A36C140E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B0860E20B9735424253E59E /* Pods_PushMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6880CE523F3F77100DE91B2 /* Build configuration list for PBXNativeTarget "PushMe" */;
 			buildPhases = (
+				25E9D97A699C36D6C17EBC39 /* [CP] Check Pods Manifest.lock */,
 				B6880CC823F3F76500DE91B2 /* Sources */,
 				B6880CC923F3F76500DE91B2 /* Frameworks */,
 				B6880CCA23F3F76500DE91B2 /* Resources */,
+				DE0535E58CF62F991825BA60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +281,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25E9D97A699C36D6C17EBC39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE0535E58CF62F991825BA60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushMe/Pods-PushMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushMe/Pods-PushMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushMe/Pods-PushMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6880CC823F3F76500DE91B2 /* Sources */ = {
@@ -403,6 +472,7 @@
 		};
 		B6880CE623F3F77100DE91B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B76773C9A11F6711B2F8A24 /* Pods-PushMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -420,6 +490,7 @@
 		};
 		B6880CE723F3F77100DE91B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD7A21B1472F531465C9FC7 /* Pods-PushMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
