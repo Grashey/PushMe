@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8C6741259BC9D46C27B2CE26 /* Pods_PushMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0860E20B9735424253E59E /* Pods_PushMe.framework */; };
 		B614E9C7240C117600E81582 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9C6240C117600E81582 /* APIManager.m */; };
 		B614E9CA240C1DB600E81582 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9C9240C1DB600E81582 /* Ticket.m */; };
+		B614E9CD240C370800E81582 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9CC240C370800E81582 /* TicketTableViewCell.m */; };
+		B614E9D0240C3F5400E81582 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9CF240C3F5400E81582 /* TicketsViewController.m */; };
 		B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD023F3F76500DE91B2 /* AppDelegate.m */; };
 		B6880CD423F3F76500DE91B2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD323F3F76500DE91B2 /* SceneDelegate.m */; };
 		B6880CD723F3F76500DE91B2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD623F3F76500DE91B2 /* TestViewController.m */; };
@@ -37,6 +39,10 @@
 		B614E9C6240C117600E81582 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		B614E9C8240C1DB600E81582 /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		B614E9C9240C1DB600E81582 /* Ticket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		B614E9CB240C370800E81582 /* TicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		B614E9CC240C370800E81582 /* TicketTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
+		B614E9CE240C3F5400E81582 /* TicketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		B614E9CF240C3F5400E81582 /* TicketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
 		B6880CCC23F3F76500DE91B2 /* PushMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6880CCF23F3F76500DE91B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6880CD023F3F76500DE91B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,7 +93,6 @@
 				4B76773C9A11F6711B2F8A24 /* Pods-PushMe.debug.xcconfig */,
 				4BD7A21B1472F531465C9FC7 /* Pods-PushMe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +150,8 @@
 		B6880CFB23F5820300DE91B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9CE240C3F5400E81582 /* TicketsViewController.h */,
+				B614E9CF240C3F5400E81582 /* TicketsViewController.m */,
 				B6EB28EF23FDBCDC00508DC5 /* PlaceViewController.h */,
 				B6EB28F023FDBCDC00508DC5 /* PlaceViewController.m */,
 				B6880CF823F581EC00DE91B2 /* MainViewController.h */,
@@ -199,6 +206,8 @@
 		B6EB28FC2403334300508DC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9CB240C370800E81582 /* TicketTableViewCell.h */,
+				B614E9CC240C370800E81582 /* TicketTableViewCell.m */,
 				B6EB28F9240330F800508DC5 /* PlaceTableViewCell.h */,
 				B6EB28FA240330F800508DC5 /* PlaceTableViewCell.m */,
 			);
@@ -337,7 +346,9 @@
 				B6880CF123F57CCC00DE91B2 /* City.m in Sources */,
 				B6880CFA23F581EC00DE91B2 /* MainViewController.m in Sources */,
 				B614E9CA240C1DB600E81582 /* Ticket.m in Sources */,
+				B614E9D0240C3F5400E81582 /* TicketsViewController.m in Sources */,
 				B6880CE223F3F77100DE91B2 /* main.m in Sources */,
+				B614E9CD240C370800E81582 /* TicketTableViewCell.m in Sources */,
 				B6880CF723F57EC200DE91B2 /* DataManager.m in Sources */,
 				B614E9C7240C117600E81582 /* APIManager.m in Sources */,
 				B6880CD423F3F76500DE91B2 /* SceneDelegate.m in Sources */,
