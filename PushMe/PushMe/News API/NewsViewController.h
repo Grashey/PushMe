@@ -10,6 +10,6 @@
 
 @interface NewsViewController : UITableViewController
 
-- (instancetype)initWithNews:(NSArray *)news;
+- (instancetype)init;
 
 @end
