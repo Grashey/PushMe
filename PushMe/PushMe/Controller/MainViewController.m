@@ -10,6 +10,7 @@
 #import "DataManager.h"
 #import "PlaceViewController.h"
 #import "TicketsViewController.h"
+#import "NewsViewController.h"
 
 @interface MainViewController () <PlaceViewControllerDelegate>
 
@@ -18,6 +19,7 @@
 @property (nonatomic) SearchRequest searchRequest;
 @property (nonatomic, strong) UIView *placeContainerView;
 @property (nonatomic, strong) UIButton *searchButton;
+@property (nonatomic, strong) UIButton *newsButton;
 
 @end
 
@@ -67,7 +69,18 @@
     _searchButton.titleLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightBold];
     [self.view addSubview:_searchButton];
     
+    _newsButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_newsButton setTitle:@"Breaking News" forState:UIControlStateNormal];
+    _newsButton.tintColor = [UIColor blackColor];
+    _newsButton.frame = CGRectMake(30.0, CGRectGetMaxY(_placeContainerView.frame) + 100, [UIScreen mainScreen].bounds.size.width - 60.0, 60.0);
+    _newsButton.backgroundColor = [UIColor redColor];
+    _newsButton.layer.cornerRadius = 8.0;
+    _newsButton.titleLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightBold];
+    [self.view addSubview:_newsButton];
+    
     [_searchButton addTarget:self action:@selector(searchButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_newsButton addTarget:self action:@selector(nextVC:) forControlEvents:UIControlEventTouchUpInside];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataLoadedSuccessfully) name:kDataManagerLoadDataDidComplete object:nil];
 }
@@ -127,9 +140,17 @@
     if (placeType == PlaceTypeDeparture) {
         _searchRequest.origin = iata;
     } else {
-        _searchRequest.destionation = iata;
+        _searchRequest.destination = iata;
     }
     [button setTitle: title forState: UIControlStateNormal];
+}
+
+- (void)nextVC:(UIButton *) sender {
+    UIViewController * nextVC = [[NewsViewController alloc] init];
+    [self addChildViewController:nextVC];
+    [self.navigationController pushViewController:nextVC animated:true];
+    [nextVC.navigationController setNavigationBarHidden:FALSE];
+    
 }
 
 @end
