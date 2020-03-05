@@ -28,6 +28,8 @@ typedef enum DataSourceType {
 //метод для загрузки данных из файлов json
 - (void)loadData;
 
+-(City *)cityForIATA:(NSString *) iata;
+
 // массивы для хранения готовых объектов данных, доступных только для чтения
 @property (nonatomic, strong, readonly) NSArray *countries;
 @property (nonatomic, strong, readonly) NSArray *cities;
