@@ -30,7 +30,8 @@
         self.contentView.backgroundColor = [UIColor whiteColor];
         
         _titleLabel = [[UILabel alloc] initWithFrame:self.bounds];
-        _titleLabel.font = [UIFont systemFontOfSize:24.0 weight:UIFontWeightBold];
+        _titleLabel.font = [UIFont systemFontOfSize:14.0 weight:UIFontWeightBold];
+        _titleLabel.numberOfLines = 3;
         [self.contentView addSubview:_titleLabel];
         
         _newsImageView = [[UIImageView alloc] initWithFrame:self.bounds];
@@ -38,35 +39,40 @@
         [self.contentView addSubview:_newsImageView];
         
         _descriptionLabel = [[UILabel alloc] initWithFrame:self.bounds];
-        _descriptionLabel.font = [UIFont systemFontOfSize:15.0 weight:UIFontWeightLight];
+        _descriptionLabel.font = [UIFont systemFontOfSize:10.0 weight:UIFontWeightLight];
         _descriptionLabel.textColor = [UIColor darkGrayColor];
+        _descriptionLabel.numberOfLines = 2;
         [self.contentView addSubview:_descriptionLabel];
         
         _dateLabel = [[UILabel alloc] initWithFrame:self.bounds];
-        _dateLabel.font = [UIFont systemFontOfSize:15.0 weight:UIFontWeightRegular];
+        _dateLabel.font = [UIFont systemFontOfSize:10.0 weight:UIFontWeightRegular];
         [self.contentView addSubview:_dateLabel];
         
     }
     return self;
 }
 
+- (void)prepareForReuse{
+    [super prepareForReuse];
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
-    self.contentView.frame = CGRectMake(10.0, 10.0, [UIScreen mainScreen].bounds.size.width - 20.0, self.frame.size.height - 20.0);
-    _newsImageView.frame = CGRectMake(10.0, 10.0, 100.0, 100.0);
-    _titleLabel.frame = CGRectMake(CGRectGetMaxX(_newsImageView.frame) + 10.0, 10.0, self.contentView.frame.size.width - 130.0, 40.0);
-    _descriptionLabel.frame = CGRectMake(CGRectGetMaxX(_newsImageView.frame) + 10.0, CGRectGetMaxY(_titleLabel.frame) + 16.0, 100.0, 20.0);
-    _dateLabel.frame = CGRectMake(CGRectGetMaxX(_newsImageView.frame) + 10.0, CGRectGetMaxY(_descriptionLabel.frame) + 8.0, self.contentView.frame.size.width - 20.0, 20.0);
+    // Нужен метод расчета высоты текста
+    self.contentView.frame = CGRectMake(10.0, 10.0, [UIScreen mainScreen].bounds.size.width - 20.0, self.frame.size.height);
+    _newsImageView.frame = CGRectMake(0.0, 10.0, 100.0, 100.0);
+    _titleLabel.frame = CGRectMake(CGRectGetMaxX(_newsImageView.frame) + 10.0, 10.0, self.contentView.frame.size.width - 130.0, 70.0);
+    _descriptionLabel.frame = CGRectMake(CGRectGetMaxX(_newsImageView.frame) + 10.0, CGRectGetMaxY(_titleLabel.frame) + 10.0, self.contentView.frame.size.width - 130.0, 30.0);
+    _dateLabel.frame = CGRectMake(CGRectGetMaxX(_newsImageView.frame) + 10.0, CGRectGetMaxY(_descriptionLabel.frame) + 8.0, self.contentView.frame.size.width - 130.0, 20.0);
 }
 
 - (void)setNews:(News *)news {
-    _news = news;
+    _topic = news;
     
-    _titleLabel.text = [NSString stringWithFormat:@"%@", news.title];
-    _descriptionLabel.text = [NSString stringWithFormat:@"%@", news.descript];
-    _dateLabel.text = [NSString stringWithFormat:@"%@", news.publishedAt];
-    NSURL *urlLogo = [NSURL URLWithString:[NSString stringWithFormat:@"%@", news.urlToImage]];
+    _titleLabel.text = [NSString stringWithFormat:@"%@", _topic.title];
+    _descriptionLabel.text = [NSString stringWithFormat:@"%@", _topic.descript];
+    _dateLabel.text = [NSString stringWithFormat:@"%@", _topic.publishedAt];
+    NSURL *urlLogo = [NSURL URLWithString:[NSString stringWithFormat:@"%@", _topic.urlToImage]];
     [_newsImageView yy_setImageWithURL: urlLogo options: YYWebImageOptionSetImageWithFadeAnimation];
 }
 

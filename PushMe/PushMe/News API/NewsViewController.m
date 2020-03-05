@@ -33,7 +33,7 @@
     NSURLSessionConfiguration *defaultSessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:defaultSessionConfiguration];
     
-    NSURL *url = [NSURL URLWithString:@"https://newsapi.org/v2/top-headlines?country=ru&apiKey=0f49b9e1bf5847bc8e0d6bf1e4972cfb"];
+    NSURL *url = [NSURL URLWithString:@"https://newsapi.org/v2/top-headlines?country=us&apiKey=0f49b9e1bf5847bc8e0d6bf1e4972cfb"];
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
     
     NSURLSessionDataTask *dataTask = [defaultSession dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -58,9 +58,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NewsViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NewsCellReuseIdentifier forIndexPath:indexPath];
-    cell.news = [_news objectAtIndex:indexPath.row];
+    News *newsForCell = [_news objectAtIndex:indexPath.row];
+    News *NewNews = [[News alloc] initWithDictionary:newsForCell];
+    [cell setNews:(NewNews)];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 150.0;
 }
 
 
