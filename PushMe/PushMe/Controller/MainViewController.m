@@ -11,6 +11,7 @@
 #import "PlaceViewController.h"
 #import "TicketsViewController.h"
 #import "NewsViewController.h"
+#import "MapViewController.h"
 
 @interface MainViewController () <PlaceViewControllerDelegate>
 
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) UIView *placeContainerView;
 @property (nonatomic, strong) UIButton *searchButton;
 @property (nonatomic, strong) UIButton *newsButton;
+@property (nonatomic, strong) UIButton *mapButton;
 
 @end
 
@@ -78,9 +80,21 @@
     _newsButton.titleLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightBold];
     [self.view addSubview:_newsButton];
     
+    _mapButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_mapButton setTitle:@"Карта" forState:UIControlStateNormal];
+    _mapButton.tintColor = [UIColor systemYellowColor];
+    _mapButton.frame = CGRectMake(30.0, CGRectGetMaxY(_placeContainerView.frame) + 170.0, [UIScreen mainScreen].bounds.size.width - 60.0, 60.0);
+    _mapButton.backgroundColor = [UIColor systemGreenColor];
+    _mapButton.layer.borderWidth = 2.0;
+    _mapButton.layer.cornerRadius = 8.0;
+    _mapButton.titleLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightBold];
+    [self.view addSubview:_mapButton];
+    
     [_searchButton addTarget:self action:@selector(searchButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
     
-    [_newsButton addTarget:self action:@selector(nextVC:) forControlEvents:UIControlEventTouchUpInside];
+    [_newsButton addTarget:self action:@selector(goToNewsVC:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_mapButton addTarget:self action:@selector(goToMapVC:) forControlEvents:UIControlEventTouchUpInside];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataLoadedSuccessfully) name:kDataManagerLoadDataDidComplete object:nil];
 }
@@ -145,12 +159,18 @@
     [button setTitle: title forState: UIControlStateNormal];
 }
 
-- (void)nextVC:(UIButton *) sender {
+- (void)goToNewsVC:(UIButton *) sender {
     UIViewController * nextVC = [[NewsViewController alloc] init];
     [self addChildViewController:nextVC];
     [self.navigationController pushViewController:nextVC animated:true];
     [nextVC.navigationController setNavigationBarHidden:FALSE];
-    
+}
+
+- (void)goToMapVC:(UIButton *) sender {
+    UIViewController * nextVC = [[MapViewController alloc] init];
+    [self addChildViewController:nextVC];
+    [self.navigationController pushViewController:nextVC animated:true];
+    [nextVC.navigationController setNavigationBarHidden:FALSE];
 }
 
 @end

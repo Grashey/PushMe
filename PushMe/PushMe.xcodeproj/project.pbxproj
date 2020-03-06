@@ -15,6 +15,7 @@
 		B614E9D4240D0A1200E81582 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9D3240D0A1200E81582 /* NewsViewController.m */; };
 		B614E9D7240D0AD600E81582 /* NewsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9D6240D0AD600E81582 /* NewsViewCell.m */; };
 		B614E9DA240D13D700E81582 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9D9240D13D700E81582 /* News.m */; };
+		B614E9DE24118E9F00E81582 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9DD24118E9F00E81582 /* MapViewController.m */; };
 		B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD023F3F76500DE91B2 /* AppDelegate.m */; };
 		B6880CD423F3F76500DE91B2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD323F3F76500DE91B2 /* SceneDelegate.m */; };
 		B6880CD723F3F76500DE91B2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD623F3F76500DE91B2 /* TestViewController.m */; };
@@ -52,6 +53,8 @@
 		B614E9D6240D0AD600E81582 /* NewsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewCell.m; sourceTree = "<group>"; };
 		B614E9D8240D13D700E81582 /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		B614E9D9240D13D700E81582 /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		B614E9DC24118E9F00E81582 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B614E9DD24118E9F00E81582 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B6880CCC23F3F76500DE91B2 /* PushMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6880CCF23F3F76500DE91B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6880CD023F3F76500DE91B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 		B6880CFB23F5820300DE91B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9DC24118E9F00E81582 /* MapViewController.h */,
+				B614E9DD24118E9F00E81582 /* MapViewController.m */,
 				B614E9CE240C3F5400E81582 /* TicketsViewController.h */,
 				B614E9CF240C3F5400E81582 /* TicketsViewController.m */,
 				B6EB28EF23FDBCDC00508DC5 /* PlaceViewController.h */,
@@ -368,6 +373,7 @@
 				B6880CF423F57DE900DE91B2 /* Airport.m in Sources */,
 				B6880CF123F57CCC00DE91B2 /* City.m in Sources */,
 				B6880CFA23F581EC00DE91B2 /* MainViewController.m in Sources */,
+				B614E9DE24118E9F00E81582 /* MapViewController.m in Sources */,
 				B614E9CA240C1DB600E81582 /* Ticket.m in Sources */,
 				B614E9D0240C3F5400E81582 /* TicketsViewController.m in Sources */,
 				B6880CE223F3F77100DE91B2 /* main.m in Sources */,
