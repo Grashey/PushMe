@@ -8,6 +8,7 @@
 
 #import "APIManager.h"
 #import "Ticket.h"
+#import "MapPrice.h"
 
 #define API_TOKEN @"0fdabf3e4a5d3fcc152686bdc95d409e"
 #define API_URL_IP_ADDRESS @"https://api.ipify.org/?format=json"
@@ -90,6 +91,27 @@ NSString * SearchRequestQuery(SearchRequest request) {
         result = [NSString stringWithFormat:@"%@&depart_date=%@&return_date=%@", result, [dateFormatter stringFromDate:request.departDate], [dateFormatter stringFromDate:request.returnDate]];
     }
     return result;
+}
+
+- (void)mapPricesFor:(City *)origin withCompletion:(void (^)(NSArray *prices))completion
+{
+    static BOOL isLoading;
+    if (isLoading) { return; }
+    isLoading = YES;
+    [self load:[NSString stringWithFormat:@"%@%@", API_URL_CHEAP, origin.code] withCompletion:^(id  _Nullable result) {
+        NSArray *array = result;
+        NSMutableArray *prices = [NSMutableArray new];
+        if (array) {
+            for (NSDictionary *mapPriceDictionary in array) {
+                MapPrice *mapPrice = [[MapPrice alloc] initWithDictionary:mapPriceDictionary withOrigin:origin];
+                [prices addObject:mapPrice];
+            }
+            isLoading = NO;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(prices);
+            });
+        }
+    }];
 }
 
 @end
