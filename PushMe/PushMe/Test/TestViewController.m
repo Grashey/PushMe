@@ -104,7 +104,7 @@ NSString *imageName;
     nextVCButton.backgroundColor = [UIColor grayColor];
     nextVCButton.tintColor = [UIColor whiteColor];
     nextVCButton.frame = nextVCButtonFrame;
-    [nextVCButton addTarget:self action:@selector(nextVC:) forControlEvents:UIControlEventTouchUpInside];
+    [nextVCButton addTarget:self action:@selector(goToNewsVC:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nextVCButton];
 }
 
