@@ -1,5 +1,5 @@
 #import "SceneDelegate.h"
-#import "MainViewController.h"
+#import "TabBarController.h"
 
 @interface SceneDelegate ()
 
@@ -13,7 +13,7 @@
     UIWindowScene *windowScene = [[UIWindowScene alloc] initWithSession:session connectionOptions:connectionOptions];
     CGRect frame = [[UIWindow alloc] initWithWindowScene:windowScene].bounds;
     self.window = [[UIWindow alloc] initWithFrame: frame];
-    UIViewController *firstViewController = [[MainViewController alloc] init];
+    UIViewController *firstViewController = [[TabBarController alloc] init];
     firstViewController.view.backgroundColor = [UIColor lightGrayColor];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
     self.window.windowScene = windowScene;
