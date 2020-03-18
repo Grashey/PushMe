@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "NewsViewController.h"
 #import "MapViewController.h"
+#import "TestCollectionViewController.h"
 
 
 @interface TabBarController ()
@@ -45,6 +46,11 @@
     newsViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:(UITabBarSystemItemMore) tag:2];
     UINavigationController *newsNavigationController = [[UINavigationController alloc] initWithRootViewController:newsViewController];
     [controllers addObject:newsNavigationController];
+    
+    TestCollectionViewController *testViewController = [[TestCollectionViewController alloc] init];
+    testViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:(UITabBarSystemItemHistory) tag:3];
+    UINavigationController *testNavigationController = [[UINavigationController alloc] initWithRootViewController:testViewController];
+    [controllers addObject:testNavigationController];
     
     return controllers;
 }
