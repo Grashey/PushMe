@@ -7,17 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E728FE2C-2EB0-455D-8F15-48D728142C91"
+            uuid = "D1728DC8-24FA-4BA9-81CE-0DA9328B9D86"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PushMe/Controller/MapViewController.m"
+            filePath = "PushMe/Controller/PlaceViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "-updateCurrentLocation:"
-            landmarkType = "7">
+            startingLineNumber = "139"
+            endingLineNumber = "139">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
