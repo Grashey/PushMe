@@ -29,6 +29,7 @@ typedef enum DataSourceType {
 - (void)loadData;
 
 -(City *)cityForIATA:(NSString *) iata;
+-(City *)cityForLocation:(CLLocation *)location;
 
 // массивы для хранения готовых объектов данных, доступных только для чтения
 @property (nonatomic, strong, readonly) NSArray *countries;

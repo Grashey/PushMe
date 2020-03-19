@@ -15,6 +15,14 @@
 		B614E9D4240D0A1200E81582 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9D3240D0A1200E81582 /* NewsViewController.m */; };
 		B614E9D7240D0AD600E81582 /* NewsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9D6240D0AD600E81582 /* NewsViewCell.m */; };
 		B614E9DA240D13D700E81582 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9D9240D13D700E81582 /* News.m */; };
+		B614E9DE24118E9F00E81582 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9DD24118E9F00E81582 /* MapViewController.m */; };
+		B614E9E124140CCD00E81582 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9E024140CCD00E81582 /* LocationManager.m */; };
+		B614E9E42414377400E81582 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9E32414377400E81582 /* MapPrice.m */; };
+		B614E9EA242283AD00E81582 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9E9242283AD00E81582 /* TabBarController.m */; };
+		B614E9ED24228F1400E81582 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9EC24228F1400E81582 /* TestCollectionViewController.m */; };
+		B614E9F62422BC5600E81582 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9F52422BC5600E81582 /* TestCollectionViewCell.m */; };
+		B614E9F92423DE2F00E81582 /* TestCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9F82423DE2F00E81582 /* TestCollectionHeaderView.m */; };
+		B614E9FC2423F6C400E81582 /* TestResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B614E9FB2423F6C400E81582 /* TestResultViewController.m */; };
 		B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD023F3F76500DE91B2 /* AppDelegate.m */; };
 		B6880CD423F3F76500DE91B2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD323F3F76500DE91B2 /* SceneDelegate.m */; };
 		B6880CD723F3F76500DE91B2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6880CD623F3F76500DE91B2 /* TestViewController.m */; };
@@ -52,6 +60,22 @@
 		B614E9D6240D0AD600E81582 /* NewsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewCell.m; sourceTree = "<group>"; };
 		B614E9D8240D13D700E81582 /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		B614E9D9240D13D700E81582 /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		B614E9DC24118E9F00E81582 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B614E9DD24118E9F00E81582 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B614E9DF24140CCD00E81582 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		B614E9E024140CCD00E81582 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		B614E9E22414377400E81582 /* MapPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		B614E9E32414377400E81582 /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		B614E9E8242283AD00E81582 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		B614E9E9242283AD00E81582 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		B614E9EB24228F1400E81582 /* TestCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
+		B614E9EC24228F1400E81582 /* TestCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		B614E9F42422BC5600E81582 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		B614E9F52422BC5600E81582 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
+		B614E9F72423DE2F00E81582 /* TestCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionHeaderView.h; sourceTree = "<group>"; };
+		B614E9F82423DE2F00E81582 /* TestCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionHeaderView.m; sourceTree = "<group>"; };
+		B614E9FA2423F6C400E81582 /* TestResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestResultViewController.h; sourceTree = "<group>"; };
+		B614E9FB2423F6C400E81582 /* TestResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestResultViewController.m; sourceTree = "<group>"; };
 		B6880CCC23F3F76500DE91B2 /* PushMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6880CCF23F3F76500DE91B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6880CD023F3F76500DE91B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,7 +167,7 @@
 				B6DB17D923FC5C5900B2BD61 /* Resources */,
 				B6880CFB23F5820300DE91B2 /* Controller */,
 				B6EB28FC2403334300508DC5 /* View */,
-				B6EB28ED23FD963200508DC5 /* Managers */,
+				B6EB28ED23FD963200508DC5 /* Managers & Services */,
 				B6880CEE23F57BA800DE91B2 /* Model */,
 				B6880CDB23F3F77100DE91B2 /* Assets.xcassets */,
 				B614E9D1240D09DE00E81582 /* News API */,
@@ -158,6 +182,8 @@
 		B6880CEE23F57BA800DE91B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9E22414377400E81582 /* MapPrice.h */,
+				B614E9E32414377400E81582 /* MapPrice.m */,
 				B614E9C8240C1DB600E81582 /* Ticket.h */,
 				B614E9C9240C1DB600E81582 /* Ticket.m */,
 				B6880CEB23F57B0200DE91B2 /* Country.h */,
@@ -173,12 +199,16 @@
 		B6880CFB23F5820300DE91B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9DC24118E9F00E81582 /* MapViewController.h */,
+				B614E9DD24118E9F00E81582 /* MapViewController.m */,
 				B614E9CE240C3F5400E81582 /* TicketsViewController.h */,
 				B614E9CF240C3F5400E81582 /* TicketsViewController.m */,
 				B6EB28EF23FDBCDC00508DC5 /* PlaceViewController.h */,
 				B6EB28F023FDBCDC00508DC5 /* PlaceViewController.m */,
 				B6880CF823F581EC00DE91B2 /* MainViewController.h */,
 				B6880CF923F581EC00DE91B2 /* MainViewController.m */,
+				B614E9E8242283AD00E81582 /* TabBarController.h */,
+				B614E9E9242283AD00E81582 /* TabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +226,14 @@
 		B6EB28EC23FD95F900508DC5 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9EB24228F1400E81582 /* TestCollectionViewController.h */,
+				B614E9EC24228F1400E81582 /* TestCollectionViewController.m */,
+				B614E9FA2423F6C400E81582 /* TestResultViewController.h */,
+				B614E9FB2423F6C400E81582 /* TestResultViewController.m */,
+				B614E9F72423DE2F00E81582 /* TestCollectionHeaderView.h */,
+				B614E9F82423DE2F00E81582 /* TestCollectionHeaderView.m */,
+				B614E9F42422BC5600E81582 /* TestCollectionViewCell.h */,
+				B614E9F52422BC5600E81582 /* TestCollectionViewCell.m */,
 				B6880CD523F3F76500DE91B2 /* TestViewController.h */,
 				B6880CD623F3F76500DE91B2 /* TestViewController.m */,
 				B6DB17D623F5E8A100B2BD61 /* TestSecondViewController.h */,
@@ -204,15 +242,17 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
-		B6EB28ED23FD963200508DC5 /* Managers */ = {
+		B6EB28ED23FD963200508DC5 /* Managers & Services */ = {
 			isa = PBXGroup;
 			children = (
+				B614E9DF24140CCD00E81582 /* LocationManager.h */,
+				B614E9E024140CCD00E81582 /* LocationManager.m */,
 				B614E9C5240C117600E81582 /* APIManager.h */,
 				B614E9C6240C117600E81582 /* APIManager.m */,
 				B6880CF523F57EC200DE91B2 /* DataManager.h */,
 				B6880CF623F57EC200DE91B2 /* DataManager.m */,
 			);
-			path = Managers;
+			path = "Managers & Services";
 			sourceTree = "<group>";
 		};
 		B6EB28EE23FD965300508DC5 /* Delegate */ = {
@@ -364,17 +404,25 @@
 				B6DB17D823F5E8A100B2BD61 /* TestSecondViewController.m in Sources */,
 				B6880CD723F3F76500DE91B2 /* TestViewController.m in Sources */,
 				B6EB28F123FDBCDC00508DC5 /* PlaceViewController.m in Sources */,
+				B614E9EA242283AD00E81582 /* TabBarController.m in Sources */,
+				B614E9F62422BC5600E81582 /* TestCollectionViewCell.m in Sources */,
+				B614E9ED24228F1400E81582 /* TestCollectionViewController.m in Sources */,
 				B6880CD123F3F76500DE91B2 /* AppDelegate.m in Sources */,
 				B6880CF423F57DE900DE91B2 /* Airport.m in Sources */,
 				B6880CF123F57CCC00DE91B2 /* City.m in Sources */,
 				B6880CFA23F581EC00DE91B2 /* MainViewController.m in Sources */,
+				B614E9FC2423F6C400E81582 /* TestResultViewController.m in Sources */,
+				B614E9DE24118E9F00E81582 /* MapViewController.m in Sources */,
+				B614E9F92423DE2F00E81582 /* TestCollectionHeaderView.m in Sources */,
 				B614E9CA240C1DB600E81582 /* Ticket.m in Sources */,
 				B614E9D0240C3F5400E81582 /* TicketsViewController.m in Sources */,
 				B6880CE223F3F77100DE91B2 /* main.m in Sources */,
 				B614E9CD240C370800E81582 /* TicketTableViewCell.m in Sources */,
+				B614E9E42414377400E81582 /* MapPrice.m in Sources */,
 				B6880CF723F57EC200DE91B2 /* DataManager.m in Sources */,
 				B614E9DA240D13D700E81582 /* News.m in Sources */,
 				B614E9D4240D0A1200E81582 /* NewsViewController.m in Sources */,
+				B614E9E124140CCD00E81582 /* LocationManager.m in Sources */,
 				B614E9C7240C117600E81582 /* APIManager.m in Sources */,
 				B6880CD423F3F76500DE91B2 /* SceneDelegate.m in Sources */,
 				B6880CED23F57B0200DE91B2 /* Country.m in Sources */,
